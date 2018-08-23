@@ -1,0 +1,27 @@
+tester:
+#------------通用的配置--------------
+    # appium专用输入法
+    unicodeKeyboard: True
+    # 结束运行后重置为原来的输入法
+    resetKeyboard: True
+    # 是否清除数据启动
+    noReset: True
+
+#------------测试app----------------
+#叮当管家
+    appPackage: com.sankuai.pms
+    appActivity: com.sankuai.pms.WelcomeActivity
+
+
+#------------操作系统----------------
+device_type: android
+
+#------------手机-------------------
+devices:
+  android:
+      - platformName: Android
+        platformVersion: 7.1.1
+        ip: 127.0.0.1
+        port: 4723
+        udid: 5e25d38e
+        deviceName: sanxing
